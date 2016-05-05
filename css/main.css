@@ -7261,3 +7261,17 @@ a.bg-danger:focus, a.bg-danger:hover {
 .show {
   display: block;
 }
+
+/* line 8, ../sass/pages/one.sass */
+#chartdiv {
+  width: 100%;
+  height: 435px;
+  font-size: 11px;
+}
+
+/* line 13, ../sass/pages/one.sass */
+#chartdiv2 {
+  width: 100%;
+  height: 500px;
+  font-size: 11px;
+}

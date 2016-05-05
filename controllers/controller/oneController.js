@@ -13,12 +13,7 @@ myTestApp.controller('oneCtrl', ['$scope',
             "threetext": ""
         }
 
-        //$scope.result.one = false;
-        //$scope.result.two = false;
-        //$scope.result.three = false;
-        //$scope.result.twotext = "";
-        //$scope.result.onetext = "";
-        //$scope.result.threetext = "";
+       $scope.time = new Date();
 
         $scope.checkselect = function(){
           var val = $('select').val();
