@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myTestApp">
+<head>
+	<!-- Required meta tags always come first -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="bower_components/angular-resource/angular-resource.js"></script>
+	<script src="config/config.js"></script>
+	<script src="controllers/build/controller.js"></script>
+	<script src="filter/filter.js"></script>
+	<script src="model/services.js"></script>
+	<script src="router/router.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body ng-controller="oneCtrl">
+
+<div class="container">
+	<div class="row m-y-2">
+		<nav class="navbar navbar-dark bg-primary">
+			<ul class="nav navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="#/">Главная</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#/one">Первая</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#/two">Вторая</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#/three">Третья</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div class="row">
+		<div ng-view></div>
+	</div>
+</div>
+
+</body>
+</html>
