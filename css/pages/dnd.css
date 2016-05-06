@@ -2,18 +2,20 @@
  * For the correct positioning of the placeholder element, the dnd-list and
  * it's children must have position: relative
  */
+/* line 5, ../../sass/pages/dnd.scss */
 .simpleDemo ul[dnd-list],
 .simpleDemo ul[dnd-list] > li {
-	position: relative;
+  position: relative;
 }
 
 /**
  * The dnd-list should always have a min-height,
  * otherwise you can't drop to it once it's empty
  */
+/* line 14, ../../sass/pages/dnd.scss */
 .simpleDemo ul[dnd-list] {
-	min-height: 42px;
-	padding-left: 0px;
+  min-height: 42px;
+  padding-left: 0px;
 }
 
 /**
@@ -22,8 +24,9 @@
  * sense to hide it to give the user the feeling
  * that he's actually moving it.
  */
+/* line 25, ../../sass/pages/dnd.scss */
 .simpleDemo ul[dnd-list] .dndDraggingSource {
-	display: none;
+  display: none;
 }
 
 /**
@@ -31,10 +34,11 @@
  * added to the dnd-list while the user is dragging
  * over it.
  */
+/* line 34, ../../sass/pages/dnd.scss */
 .simpleDemo ul[dnd-list] .dndPlaceholder {
-	display: block;
-	background-color: #ddd;
-	min-height: 42px;
+  display: block;
+  background-color: #ddd;
+  min-height: 42px;
 }
 
 /**
@@ -44,41 +48,44 @@
  * half of the element we are dragging over. In other
  * browsers we can use event.offsetY for this.
  */
+/* line 47, ../../sass/pages/dnd.scss */
 .simpleDemo ul[dnd-list] li {
-	background-color: #fff;
-	border: 1px solid #ddd;
-	border-top-right-radius: 4px;
-	border-top-left-radius: 4px;
-	display: block;
-	padding: 10px 15px;
-	margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
 }
 
 /**
  * Show selected elements in green
  */
+/* line 60, ../../sass/pages/dnd.scss */
 .simpleDemo ul[dnd-list] li.selected {
-	background-color: #dff0d8;
-	color: #3c763d;
+  background-color: #dff0d8;
+  color: #3c763d;
 }
-
 
 /**
  * For the correct positioning of the placeholder element, the dnd-list and
  * it's children must have position: relative
  */
+/* line 70, ../../sass/pages/dnd.scss */
 .multiDemo ul[dnd-list],
 .multiDemo ul[dnd-list] > li {
-	position: relative;
+  position: relative;
 }
 
 /**
  * The dnd-list should always have a min-height,
  * otherwise you can't drop into it once it's empty
  */
+/* line 79, ../../sass/pages/dnd.scss */
 .multiDemo ul[dnd-list] {
-	min-height: 42px;
-	padding-left: 0px;
+  min-height: 42px;
+  padding-left: 0px;
 }
 
 /**
@@ -86,10 +93,11 @@
  * added to the dnd-list while the user is dragging
  * over it.
  */
+/* line 89, ../../sass/pages/dnd.scss */
 .multiDemo ul[dnd-list] .dndPlaceholder {
-	display: block;
-	background-color: #ddd;
-	min-height: 42px;
+  display: block;
+  background-color: #ddd;
+  min-height: 42px;
 }
 
 /**
@@ -99,20 +107,22 @@
  * half of the element we are dragging over. In other
  * browsers we can use event.offsetY for this.
  */
+/* line 102, ../../sass/pages/dnd.scss */
 .multiDemo ul[dnd-list] li {
-	background-color: #fff;
-	border: 1px solid #ddd;
-	border-top-right-radius: 4px;
-	border-top-left-radius: 4px;
-	display: block;
-	padding: 10px 15px;
-	margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
 }
 
 /**
  * Show selected elements in green
  */
+/* line 115, ../../sass/pages/dnd.scss */
 .multiDemo ul[dnd-list] li.selected {
-	background-color: #dff0d8;
-	color: #3c763d;
+  background-color: #dff0d8;
+  color: #3c763d;
 }
