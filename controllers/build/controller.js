@@ -307,6 +307,21 @@ myTestApp.controller('twoCtrl', ['$scope',
 
 myTestApp.controller("threeCtrl", function($scope) {
 
+    $scope.colorschenge = function(){
+        var color = $('.form-inline input').val();
+        var id = $scope.lastid;
+        $('li:contains("'+id+'")').css("background-color", color);
+        $('#ex1').removeClass('displays');
+
+    };
+
+    $scope.showModal = function(){
+        console.log(this.item.label);
+       // this.addClass(this.$id);
+        $scope.lastid = this.item.label
+        $('#ex1').addClass('displays');
+    };
+
     $scope.models = [
         {listName: "A", items: [], dragging: false},
         {listName: "B", items: [], dragging: false}
@@ -371,24 +386,3 @@ myTestApp.controller("threeCtrl", function($scope) {
     }, true);
 
 });
-
-
-//myTestApp.controller('threeCtrl', ['$scope',
-//    function($scope) {
-//        $scope.models = {
-//            selected: null,
-//            lists: {"A": [], "B": []}
-//        };
-//
-//        // Generate initial model
-//        for (var i = 1; i <= 3; ++i) {
-//            $scope.models.lists.A.push({label: "Item A" + i});
-//            $scope.models.lists.B.push({label: "Item B" + i});
-//        }
-//
-//        // Model to JSON for demo purpose
-//        $scope.$watch('models', function(model) {
-//            $scope.modelAsJson = angular.toJson(model, true);
-//        }, true);
-//
-//    }]);

@@ -26,3 +26,8 @@
   height: 500px;
   font-size: 11px;
 }
+
+/* line 18, ../../sass/pages/one.sass */
+.displays {
+  display: block !important;
+}

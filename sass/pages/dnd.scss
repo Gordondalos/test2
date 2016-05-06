@@ -116,3 +116,15 @@
 	background-color: #dff0d8;
 	color: #3c763d;
 }
+
+.demo-modal {
+	border: 1px solid black;
+	background-color: #ccc;
+	padding: 5px;
+}
+
+.demo-modal-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}

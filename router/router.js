@@ -3,7 +3,7 @@ myTestApp.config(['$routeProvider', function($routeProvide){
     $routeProvide
         .when ('/',{
         templateUrl:'view/home.html',
-
+        //controller: 'homeCtrl'
     })
         .when ('/one',{
         templateUrl:'view/one.html',

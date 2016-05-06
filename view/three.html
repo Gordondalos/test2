@@ -1,19 +1,38 @@
 <div ng-controller="threeCtrl">
 
+	<div class="p-y-2" id="ex1" style="display:none;">
+		<form class="form-inline" >
+			<input class="form-control" name="color" type="text">
 
-	<ul dnd-list dnd-drop="onDrop(list, item, index)">
-		<li ng-repeat="item in list.items"
-		    dnd-draggable="getSelectedItemsIncluding(list, item)"
-		    dnd-dragstart="onDragstart(list, event)"
-		    dnd-moved="onMoved(list)"
-		    dnd-dragend="list.dragging = false"
-		    dnd-selected="item.selected = !item.selected"
-		    ng-class="{'selected': item.selected}"
-		    ng-hide="list.dragging && item.selected"
-				>
-			{{item.label}}
-		</li>
-	</ul>
+		</form>
+		<button ng-click="colorschenge()" class="btn btn-primary display-inline-block">Применить цвет</button>
+	</div>
+
+		<div ng-repeat="list in models" class="col-md-6 multiDemo">
+			<ul class="dnd" dnd-list dnd-drop="onDrop(list, item, index)">
+				<li ng-repeat="item in list.items"
+				    ng-dblclick="showModal()"
+				    dnd-draggable="getSelectedItemsIncluding(list, item)"
+				    dnd-dragstart="onDragstart(list, event)"
+				    dnd-moved="onMoved(list)"
+				    dnd-dragend="list.dragging = false"
+				    dnd-selected="item.selected = !item.selected"
+				    ng-class="{'selected': item.selected}"
+				    ng-hide="list.dragging && item.selected"
+						>
+					{{item.label}}
+				</li>
+			</ul>
+		</div>
+
+		<pre class="code">{{modelAsJson}}</pre>
+
 
 
 </div>
+
+
+
+
+
+
