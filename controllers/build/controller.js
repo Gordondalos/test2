@@ -307,19 +307,26 @@ myTestApp.controller('twoCtrl', ['$scope',
 
 myTestApp.controller("threeCtrl", function($scope) {
 
-    $scope.colorschenge = function(){
-        var color = $('.form-inline input').val();
-        var id = $scope.lastid;
-        $('li:contains("'+id+'")').css("background-color", color);
-        $('#ex1').removeClass('displays');
+    $scope.displayForm = false;
+    $scope.selectedItem = {};
 
-    };
+    $scope.closeForm = function(){
+        $scope.displayForm = false;
+        $scope.selectedItem.color = $scope.color;
+        $scope.color = "";
+        $scope.selectedItem = {};
+    }
 
     $scope.showModal = function(){
-        console.log(this.item.label);
-       // this.addClass(this.$id);
-        $scope.lastid = this.item.label
-        $('#ex1').addClass('displays');
+
+        $scope.displayForm = true;
+
+        $scope.selectedItem = this.item;
+
+
+
+
+
     };
 
     $scope.models = [
@@ -376,7 +383,7 @@ myTestApp.controller("threeCtrl", function($scope) {
     // Generate the initial model
     angular.forEach($scope.models, function(list) {
         for (var i = 1; i <= 4; ++i) {
-            list.items.push({label: "Item " + list.listName + i});
+            list.items.push({label: "Item " + list.listName + i, color: '#fff'});
         }
     });
 
