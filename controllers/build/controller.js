@@ -307,6 +307,10 @@ myTestApp.controller('twoCtrl', ['$scope',
 
 myTestApp.controller("threeCtrl", function($scope) {
 
+    $scope.del=function(items, index){
+        items.splice(index,1);
+    };
+
     $scope.displayForm = false;
     $scope.selectedItem = {};
 

@@ -22,11 +22,13 @@
 				    ng-hide="list.dragging && item.selected"
 						>
 					{{item.label}}
+					<a ng-click="del(list.items, $index)">del</a>
 				</li>
 			</ul>
 		</div>
+	<div class="clearfix"></div>
 
-		<pre class="code">{{modelAsJson}}</pre>
+		<pre>{{models |json}}</pre>
 
 
 
