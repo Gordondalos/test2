@@ -1,7 +1,7 @@
 'use strict';
 // One
 
-myTestApp.controller('oneCtrl', ['$scope',
+myTestApp.controller('homeCtrl', ['$scope',
     function($scope) {
-        $scope.name = "Вася"
+
     }]);
